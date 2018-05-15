@@ -14,7 +14,7 @@
 //
 package swag
 
-import "github.com/savaki/swag/swagger"
+import "github.com/filewalkwithme/swag/swagger"
 
 // Builder uses the builder pattern to generate a swagger definition
 type Builder struct {
