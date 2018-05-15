@@ -20,6 +20,10 @@ import (
 )
 
 func inspect(t reflect.Type, jsonTag string) Property {
+	if t.Kind() == reflect.Ptr {
+		t = t.Elem()
+	}
+
 	p := Property{
 		GoType: t,
 	}
